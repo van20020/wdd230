@@ -1,6 +1,6 @@
 @media screen and (min-width: 32rem) {
     nav {
-        background-color: 444;
+        background-color: #444;
         padding: 10px;
         display: flex;
         flex-direction: row;
