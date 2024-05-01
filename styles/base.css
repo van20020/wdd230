@@ -59,12 +59,12 @@ main {
 }
 
 .title {
-    color: #333;
-    margin-bottom: 10px;
+    color: #444;
+    /* margin-bottom: 10px; */
     grid-column: 1 / 4;
     grid-row: 1 / 2;
     padding-left: 100px;
-    border-bottom: solid;
+    /* border-bottom: solid; */
 }
 
 .sub {
