@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #acacac;
 }
 
 .color1 {
@@ -93,6 +94,7 @@ nav {
 nav a {
     text-decoration: none;
     color: white;
+    background-color: #444;
 }
 
 nav a:hover {
@@ -102,6 +104,10 @@ nav a:hover {
 p {
     margin: 15px;
     text-align: center;
+}
+
+.red {
+    color: red;
 }
 
 .wireframe {
