@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.activities {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 1fr 1fr 1fr;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(212, 212, 212);
+}
+
+.card {
+    background-color: white;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.heroimage {
+    border-style: solid;
+    width: 100%;
+}
+
+.info {
+    padding: 10px;
+    text-align: center;
+}
+
+.image {
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-style: solid;
+}
+
+.image1 {
+    grid-row: 2/3;
+}
+
+.image2 {
+    grid-row: 3/4;
+}
+
+.image3 {
+    grid-row: 4/5;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+ 	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❌";
+}
+
+nav {
+    display: flex;
+	flex-direction: column;
+	list-style: none;
+	background-color: #444;
+    /* background-color: #444;
+    text-align: center;
+    padding: 15px; */
+}
+
+nav a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    /* color: white;
+    text-decoration: none;
+    margin: 10px; */
+}
+
+nav a:hover {
+    color: #FFC107
+}
+
+.open a {
+	display: block;
+}
+
+main {
+    padding: 20px;
+}
+
+
+.sub {
+    background-color: red;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.title {
+    margin-top: 10px;
+}
