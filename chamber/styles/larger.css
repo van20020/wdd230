@@ -1,15 +1,47 @@
 @media (min-width: 37.5em) {
 
+    .cta {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .cta button {
+        display: inline;
+        margin: 5px;
+    }
+
+    .cta h1 {
+        display: inline;
+        margin-left: 200px;
+    }
+
+    .cta p {
+        display: inline-block;
+    }
+    
+    .image {
+        margin-left: 170px;
+    }
+    
     #menu {
         display: none;
     }  
 
-    .nav {
-        flex-direction: row;
+    .open a {
+        display: block;
     }
 
-    .nav a {
-        display: block;
-        flex: 1 1 100%;
+    .navigation {
+		flex-direction: row;
+	}
+
+	.navigation a {
+		display: block;
+		flex: 1 1 100%;
+        font-weight: bold;
+	}
+
+    .navigation a:hover {
+        font-weight: 1000;
     }
 }
