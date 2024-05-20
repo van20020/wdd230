@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer img {
+    width: 75px;
+    height: 50px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.lastmodified {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main img{
+    display: block;
+    border-style: solid;
+    border-radius: 5px;
+    margin: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: fade-in 1.5s ease-in-out;
+}
+
+.title {
+    color: white;
+}
