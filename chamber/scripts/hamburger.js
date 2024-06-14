@@ -5,3 +5,7 @@ hamButton.addEventListener('click', () => {
 	navigation.classList.toggle('open');
 	hamButton.classList.toggle('open');
 });
+
+function openJoinPage() {
+    window.location.href = 'join.html';
+}
