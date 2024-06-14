@@ -133,4 +133,12 @@
     .navigation a:hover {
         font-weight: 1000;
     }
+
+/* Join css larger */
+
+    .joingrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
 }
