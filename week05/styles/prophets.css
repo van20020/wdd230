@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+}
+
+h2 {
+    color: red;
+}
+
+img {
+    border-style: solid;
+}
+
+section {
+    text-align: center;
+    background-color: #999;
+}

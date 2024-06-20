@@ -1,0 +1,29 @@
+{
+    "familyName": "Vang",
+    "moveInDate": "2023-05-15",
+    "numberOfPeople": 4,
+    "visitedByBishopric": true,
+    "familyMembers": [
+      {
+        "name": "Chris Vang",
+        "gender": "male",
+        "birthdate": "1999-02-14"
+      },
+      {
+        "name": "Sidney Vang",
+        "gender": "female",
+        "birthdate": "1992-09-20"
+      },
+      {
+        "name": "Emily Vang",
+        "gender": "female",
+        "birthdate": "2015-07-10"
+      },
+      {
+        "name": "Michael Vang",
+        "gender": "male",
+        "birthdate": "2018-11-30"
+      }
+    ]
+  }
+  
