@@ -1,7 +1,7 @@
 {
-    "weeks": [
+    "Lessons": [
         {
-            "week": "Week 1",
+            "weeks": "Week 1",
             "links": [
                 {
                     "url": "week01/holygrail.html",
@@ -18,7 +18,7 @@
             ]
         },
         {
-            "week": "Week 2",
+            "weeks": "Week 2",
             "links": [
                 {
                     "url": "week02/bom.html",
@@ -31,7 +31,7 @@
             ]
         },
         {
-            "week": "Week 3",
+            "weeks": "Week 3",
             "links": [
                 {
                     "url": "week03/bomstorage.html",
@@ -48,7 +48,7 @@
             ]
         },
         {
-            "week": "Week 4",
+            "weeks": "Week 4",
             "links": [
                 {
                     "url": "week04/tablebuild.html",
@@ -57,7 +57,7 @@
             ]
         },
         {
-            "week": "Week 5",
+            "weeks": "Week 5",
             "links": [
                 {
                     "url": "week05/prophets.html",

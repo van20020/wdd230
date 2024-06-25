@@ -192,3 +192,9 @@ footer img {
 .lastmodified {
     font-family: Arial, sans-serif;
 }
+
+figure {
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bold;
+}
