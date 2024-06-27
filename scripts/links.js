@@ -5,11 +5,11 @@ const allWeeks = document.querySelector("#allWeeks");
 async function getLinks() {
   const response = await fetch(linksURL);
   const data = await response.json();
-  displayLinks(data.weeks);
+  displayLinks(data.Lessons);
 }
 
-const displayLinks = (weeks) => {
-  weeks.forEach((week) => {
+const displayLinks = (lessons) => {
+  lessons.forEach((week) => {
     let card = document.createElement("section");
     let weeks = document.createElement("p");
     let links = document.createElement("p");
@@ -25,6 +25,3 @@ const displayLinks = (weeks) => {
 };
 
 getLinks();
-
-
-  
