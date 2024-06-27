@@ -45,4 +45,8 @@
 		display: block;
 		flex: 1 1 100%;
 	}
+
+    li {
+        display: inline;
+    }
 }

@@ -1,5 +1,7 @@
+
 const baseURL = "https://van20020.github.io/wdd230/";
 const linksURL = "https://van20020.github.io/wdd230/data/links.json";
+const container = document.querySelector('#allWeeks');
 
 async function getLinks() {
     const response = await fetch(linksURL);
@@ -11,20 +13,16 @@ getLinks();
 
 
 function displayLinks(weeks) {
-  const container = document.querySelector('#allWeeks');
 
   weeks.forEach(week => {
-    // Create the week heading
     const weekHeader = document.createElement('h2');
     weekHeader.textContent = week.week;
     container.appendChild(weekHeader);
 
-    // Create the list of activities
     const ul = document.createElement('ul');
 
     week.links.forEach((link, index) => {
       const li = document.createElement('li');
-      li.style.display = "inline"; // Display list items inline
 
       const a = document.createElement('a');
       a.href = `${baseURL}${link.url}`;
@@ -32,12 +30,6 @@ function displayLinks(weeks) {
       li.appendChild(a);
 
       ul.appendChild(li);
-
-      // Add a pipe separator except for the last link
-      if (index < week.links.length - 1) {
-        const separator = document.createTextNode(" | ");
-        ul.appendChild(separator);
-      }
     });
 
     container.appendChild(ul);

@@ -148,6 +148,10 @@ li {
     margin-bottom: 10px;
 }
 
+ul {
+    padding-left: 10px;
+}
+
 .card {
     background-color: white;
     border-radius: 5px;
