@@ -5,15 +5,15 @@
             "links": [
                 {
                     "url": "week01/holygrail.html",
-                    "title:": "HG Layout"
+                    "title":"HG Layout"
                 },
                 {
                     "url": "week01/media-query.html",
-                    "title:": "Media Query"
+                    "title":"Media Query"
                 },
                 {
                     "url": "week01/chamber-site-plan.html",
-                    "title:": "Chamber Site Plan"
+                    "title":"Chamber Site Plan"
                 }
             ]
         },
@@ -22,11 +22,11 @@
             "links": [
                 {
                     "url": "week02/bom.html",
-                    "title:": "Book of Mormon"
+                    "title": "Book of Mormon"
                  },
                 {
                     "url": "week02/desgin.html",
-                    "title:": "Design"
+                    "title": "Design"
                 }
             ]
         },
@@ -35,15 +35,15 @@
             "links": [
                 {
                     "url": "week03/bomstorage.html",
-                    "title:": "Book of Mormon Storage"
+                    "title":"Book of Mormon Storage"
                 },
                 {
-                    "url": "week03/lazyload.html",
-                    "title:": "Lazy Load"
+                    "url":"week03/lazyload.html",
+                    "title":"Lazy Load"
                 },
                 {
-                    "url": "week03/responsive-images.html",
-                    "title:": "Responsive Images"
+                    "url":"week03/responsive-images.html",
+                    "title":"Responsive Images"
                 }
             ]
         },
@@ -51,8 +51,8 @@
             "week": "Week 4",
             "links": [
                 {
-                    "url": "week04/tablebuild.html",
-                    "title:": "Table Build"
+                    "url":"week04/tablebuild.html",
+                    "title":"Table Build"
                  }
             ]
         },
@@ -60,12 +60,12 @@
             "week": "Week 5",
             "links": [
                 {
-                    "url": "week05/prophets.html",
-                    "title:": "Prophets"
+                    "url":"week05/prophets.html",
+                    "title":"Prophets"
                 },
                 {
-                    "url": "week05/weather.html",
-                    "title:": "Weather"
+                    "url":"week05/weather.html",
+                    "title":"Weather"
                 }
             ]
         }
