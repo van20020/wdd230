@@ -58,3 +58,5 @@ async function displaySpotlights() {
         spotlightsContainer.appendChild(spotlightDiv);
     });
 }
+
+window.onload = displaySpotlights;
