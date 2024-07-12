@@ -287,3 +287,97 @@ input {
 /* Directory CSS
 
 
+/* Weather CSS */
+/* CSS for Weather Display */
+#currentTemp {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.tempbox {
+    border: 2px solid #ccc;
+    background-color: #888;
+    color: white;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+  
+#weatherIcon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+  
+figcaption {
+    font-size: 18px;
+    font-style: italic;
+    color: #666666;
+}
+
+figure {
+    text-align: center;
+}
+  
+.forecast-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .forecast-item span {
+    margin-right: 10px;
+    text-transform: capitalize;
+  }
+  
+  .forecast-item img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .forecastpara {
+    border: 2px solid #ccc;
+    background-color: #888;
+    color: white;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-size: 20px;
+    margin-top: 50px;
+  }
+
+  /* Banner */
+  .banner {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+    z-index: 1000;
+  }
+  .close-btn {
+    float: right;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+  }

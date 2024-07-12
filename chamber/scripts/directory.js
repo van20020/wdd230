@@ -1,51 +1,34 @@
-const membersUrl =
-  "https://van20020.github.io/wdd230/chamber/data/members.json";
-const membersCards = document.querySelector("#memberCards");
+document.addEventListener('DOMContentLoaded', () => {
+  const directory = document.getElementById('directory');
+  const toggleViewButton = document.getElementById('toggleView');
+  const membersURL = "https://van20020.github.io/wdd230/chamber/data/members.json";
+  let gridView = true;
 
-async function getMemberData() {
-  const response = await fetch(membersUrl);
-  const data = await response.json();
-  // console.table(data.members)
-  displayMembers(data.members);
-}
+  fetch(membersURL)
+      .then(response => response.json())
+      .then(data => {
+          renderDirectory(data);
+      });
 
-const displayMembers = (members) => {
-  members.forEach((member) => {
-    let card = document.createElement("section");
-    let name = document.createElement("h2");
-    let address = document.createElement("p");
-    let number = document.createElement("p");
-    let link = document.createElement("p");
-
-    name.textContent = `${member.name}`;
-    address.textContent = `${member.address}`;
-    number.textContent = `${member.phone}`;
-    link.textContent = `${member.website}`;
-
-    card.appendChild(name);
-    card.appendChild(address);
-    card.appendChild(number);
-    card.appendChild(link);
-
-    membersCards.appendChild(card);
+  toggleViewButton.addEventListener('click', () => {
+      gridView = !gridView;
+      directory.className = gridView ? 'grid-view' : 'list-view';
+      toggleViewButton.textContent = gridView ? '📄List' : '⏹️Grid';
   });
-};
 
-getMemberData();
-
-const gridbutton = document.querySelector("#grid");
-const listbutton = document.querySelector("#list");
-const display = document.querySelector("article");
-
-gridbutton.addEventListener("click", () => {
-  display.classList.add("grid");
-  display.classList.remove("list");
+  function renderDirectory(members) {
+      members.forEach(member => {
+          const card = document.createElement('div');
+          card.className = 'member-card';
+          card.innerHTML = `
+              <img src="${member.image}" alt="${member.name}">
+              <h3>${member.name}</h3>
+              <p>${member.address}</p>
+              <p>${member.phone}</p>
+              <p><a href="${member.website}" target="_blank">${member.website}</a></p>
+              <p>Membership Level: ${member.membershipLevel}</p>
+          `;
+          directory.appendChild(card);
+      });
+  }
 });
-
-listbutton.addEventListener("click", showList);
-
-function showList() {
-  display.classList.add("list");
-  display.classList.remove("grid");
-}
-

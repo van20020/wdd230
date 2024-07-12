@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chamber of Commerce Meet and Greet Banner</title>
+<style>
+  .banner {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+    z-index: 1000;
+  }
+  .close-btn {
+    float: right;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+  }
+</style>
+</head>
+<body>
+<div class="banner" id="banner">
+  <span>Attend the Chamber of Commerce Meet and Greet on Wednesday at 7:00 p.m.</span>
+  <span class="close-btn" onclick="closeBanner()">❌</span>
+</div>
+<script>
+  // Function to check if today is Monday, Tuesday, or Wednesday
+  function isBannerDay() {
+    const today = new Date();
+    const dayOfWeek = today.getDay(); // 0 = Sunday, 1 = Monday, ..., 6 = Saturday
+    return (dayOfWeek >= 1 && dayOfWeek <= 3); // Monday, Tuesday, Wednesday
+  }
+
+  // Function to close the banner
+  function closeBanner() {
+    const banner = document.getElementById('banner');
+    banner.style.display = 'none';
+  }
+
+  document.addEventListener("DOMContentLoaded", function() {
+    if (isBannerDay()) {
+      const banner = document.getElementById('banner');
+      banner.style.display = 'block';
+    }
+  });
+</script>
+</body>
+</html>

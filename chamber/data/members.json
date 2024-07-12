@@ -1,5 +1,4 @@
-{
-    "members": [
+[
       {
         "name": "Company A",
         "address": "123 Main St, Cityville, CA 90001",
@@ -63,6 +62,5 @@
         "membership_level": "Silver",
         "other_info": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit."
       }
-    ]
-  }
+]
   

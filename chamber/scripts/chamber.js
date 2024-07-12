@@ -1,18 +1,14 @@
 function getMessage() {
-    //get current date
     let currentDate = new Date();
     let storedDate;
     let message;
 
-    //get date from local storage
     let date = localStorage.getItem('date');
 
-    // compare dates
     if (date) {
         storedDate = new Date(parseInt(date));
     }
 
-    //return appropriate message
     if (date) {
         let differenceInTime = currentDate.getTime() - storedDate.getTime();
         if (differenceInTime < 86400000) {
