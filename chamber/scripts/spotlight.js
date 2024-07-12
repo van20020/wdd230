@@ -10,7 +10,7 @@ async function fetchMemberData() {
 
 async function getSpotlightMembers() {
     const members = await fetchMemberData();
-    return members.filter(member => member.membershipLevel === 'Gold' || member.membershipLevel === 'Silver');
+    return members.filter(member => member.membership_level === 'Gold' || member.membership_level === 'Silver');
 }
 
 function shuffleArray(array) {
@@ -22,7 +22,7 @@ function shuffleArray(array) {
 }
 
 async function displaySpotlights() {
-    const spotlightsContainer = document.querySelector('.card-2');
+    const spotlightsContainer = document.querySelector('.spotlights');
     const spotlightMembers = await getSpotlightMembers();
     const shuffledSpotlightMembers = shuffleArray(spotlightMembers);
 
