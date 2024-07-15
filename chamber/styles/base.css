@@ -171,7 +171,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #FFC107
+    color: #FFC107;
 }
 
 .open a {
@@ -319,10 +319,12 @@ figcaption {
     font-size: 18px;
     font-style: italic;
     color: #666666;
+    text-transform: capitalize;
 }
 
 figure {
     text-align: center;
+    margin-top: 15px;
 }
   
 .forecast-item {
@@ -363,13 +365,29 @@ figure {
   }
 
 /* Directory */
+#toggleView {
+    padding: 10px 20px;
+    margin: 20px;
+    background-color: #4CAF50;
+    color: white; 
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+#toggleView:hover {
+    background-color: #ff8c00;
+}
+
 .grid-view {
     display: flex;
     flex-wrap: wrap;
 }
 
 .grid-view .member-card {
-    flex: 1 1 calc(34% - 20px);
     margin: 10px;
     border: 1px solid #ccc;
     padding: 10px;
@@ -378,9 +396,8 @@ figure {
     text-align: center;
 }
 
-.grid-view {
-    display: flex;
-    flex-wrap: wrap;
+.member-card h2 {
+    font-size: 30px;
 }
 
 .grid-view .member-card {
@@ -400,73 +417,67 @@ figure {
     display: block;
 }
 
+.list-view .member-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: white;
+    font-size: 15px;
+    margin: 10px;
+}
+
+.list-view .member-card p {
+    margin: 10px;
+}
 
 .list-view .member-card img {
-    margin-right: 15px;
     width: 100px;
     height: 100px;
     object-fit: cover;
 }
 
-.list-view .member-card {
+/* Spotlight */
+.spotlights {
     display: flex;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    padding: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    background-color: white;
-    font-size: xx-small;
+    flex-direction: column;
 }
 
-/* Spotlight */
+.spotlights h2{
+   text-align: center;
+}
 .spotlight {
+    border-radius: 10px;
     border: 1px solid #ccc;
     padding: 10px;
-    margin: 10px;
-    text-align: center;
-    background-color: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    display: inline-block;
-    width: calc(33.333% - 20px);
-    box-sizing: border-box;
+    margin: 45px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 .spotlight img {
     width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-.spotlight h3 {
-    margin: 10px 0;
-    font-size: 18px;
+    border-radius: 10px;
 }
 
 .spotlight p {
-    margin: 5px 0;
-    font-family: "Roboto", sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 400;
-    font-style: normal;
 }
 
 .spotlight a {
-    color: #007bff;
+    color: #777;
     text-decoration: none;
     font-weight: bold;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .spotlight a:hover {
-    text-decoration: underline;
+    color: #FFC107;
 }
 
   /* Banner */
 .banner {
     display: none;
-    background-color: #2E86AB;
+    background-color: #999;
     color: white;
     padding: 40px;
     text-align: center;

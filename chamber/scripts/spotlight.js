@@ -39,14 +39,14 @@ async function displaySpotlights() {
         name.textContent = member.name;
 
         const address = document.createElement('p');
-        address.textContent = `Address: ${member.address}`;
+        address.textContent = `${member.address}`;
 
         const phone = document.createElement('p');
-        phone.textContent = `Phone: ${member.phone}`;
+        phone.textContent = `Phone Number: ${member.phone}`;
 
         const website = document.createElement('a');
         website.href = member.website;
-        website.textContent = 'Visit Website';
+        website.textContent = 'Company Website';
         website.target = '_blank';
 
         spotlightDiv.appendChild(img);

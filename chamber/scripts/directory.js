@@ -22,11 +22,11 @@ document.addEventListener('DOMContentLoaded', () => {
           card.className = 'member-card';
           card.innerHTML = `
               <img src="${member.image}" alt="${member.name}">
-              <h3>${member.name}</h3>
+              <h2>${member.name}</h2>
               <p>${member.address}</p>
               <p>${member.phone}</p>
               <p><a href="${member.website}" target="_blank">${member.website}</a></p>
-              <p>Membership Level: ${member.membershipLevel}</p>
+              <p>Membership Level: ${member.membership_level}</p>
           `;
           directory.appendChild(card);
       });

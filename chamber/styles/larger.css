@@ -141,4 +141,25 @@
         grid-template-columns: 1fr 1fr;
         grid-gap: 10px;
     }
+
+/* Spotlight */
+    .spotlights {
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* Directory */
+    .list-view .member-card{
+        display: flex;
+        width: 100%;
+    }
+
+    .list-view .member-card h2 p{
+        margin: 10px;
+    }
+
+    .grid-view {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
 }
