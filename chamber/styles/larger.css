@@ -111,6 +111,10 @@
     .image {
         margin-left: 170px;
     }
+
+    .heroimage {
+        height: 500px;
+    }
     
     #menu {
         display: none;
